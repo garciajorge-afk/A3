@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Pagina 3</title>
+  <style>
+      canvas{
+          border: 1px solid #19c050;
+          background-color: white;
+      }
+  </style>
+  </head>
+  <script>
+      window.onload=function(){
+          var canvas = document.getElementById("micanvas");
+          var context = canvas.getContext("2d");
+          context.fillRect(10,10,100,100);
+      }
+  </script>
+  <script>
+      function animate(){
+          requestAnimationFrame(animate);
+          console.log('animando');
+      }
+      animate();
+  </script>
+<body>
+   <canvas id="micanvas" width="800" height="600"></canvas>
+</body>
+</html>
